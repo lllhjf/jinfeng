@@ -215,7 +215,7 @@ function GroupMenu() {
 function TopGroup(props) {
   const { latestPosts, allNavPages, siteInfo } = props
   const { locale } = useGlobal()
-  // const todayCardRef = useRef()
+  const todayCardRef = useRef()
   function handleMouseLeave() {
     todayCardRef.current.coverUp()
   }
