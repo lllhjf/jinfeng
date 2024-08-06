@@ -228,7 +228,12 @@ function TopGroup(props) {
       id='hero-right-wrapper'
       onMouseLeave={handleMouseLeave}
       className='flex-1 relative w-full'>
+      {/* 置顶推荐文章 */}
+      <div
+        id='top-group'
+        className='w-full flex space-x-3 xl:space-x-0 xl:grid xl:grid-cols-3 xl:gap-3 xl:h-[342px]'>
 
+      </div>
       {/* 一个大的跳转文章卡片 */}
       <TodayCard cRef={todayCardRef} siteInfo={siteInfo} />
     </div>
