@@ -221,7 +221,7 @@ function TopGroup(props) {
   }
 
   // 获取置顶推荐文章
-  // const topPosts = getTopPosts({ latestPosts, allNavPages })
+  const topPosts = getTopPosts({ latestPosts, allNavPages })
 
   return (
     <div
