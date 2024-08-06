@@ -33,7 +33,7 @@ const Hero = props => {
         {/* <div className='px-1.5 h-full'></div> */}
 
         {/* 右侧置顶文章组 */}
-        {/* <TopGroup {...props} /> */}
+        <TopGroup {...props} />
       </div>
     </div>
   )
@@ -215,13 +215,13 @@ function GroupMenu() {
 function TopGroup(props) {
   const { latestPosts, allNavPages, siteInfo } = props
   const { locale } = useGlobal()
-  const todayCardRef = useRef()
-  function handleMouseLeave() {
-    todayCardRef.current.coverUp()
-  }
+  // const todayCardRef = useRef()
+  // function handleMouseLeave() {
+  //   todayCardRef.current.coverUp()
+  // }
 
   // 获取置顶推荐文章
-  const topPosts = getTopPosts({ latestPosts, allNavPages })
+  // const topPosts = getTopPosts({ latestPosts, allNavPages })
 
   return (
     <div
