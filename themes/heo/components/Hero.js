@@ -215,13 +215,13 @@ function GroupMenu() {
 function TopGroup(props) {
   const { latestPosts, allNavPages, siteInfo } = props
   const { locale } = useGlobal()
-  // const todayCardRef = useRef()
-  // function handleMouseLeave() {
-  //   todayCardRef.current.coverUp()
-  // }
+  const todayCardRef = useRef()
+  function handleMouseLeave() {
+    todayCardRef.current.coverUp()
+  }
 
   // 获取置顶推荐文章
-  // const topPosts = getTopPosts({ latestPosts, allNavPages })
+  const topPosts = getTopPosts({ latestPosts, allNavPages })
 
   return (
     <div
@@ -255,7 +255,7 @@ function TopGroup(props) {
         })}
       </div>
       {/* 一个大的跳转文章卡片 */}
-      <TodayCard cRef={todayCardRef} siteInfo={siteInfo} />
+      {/* <TodayCard cRef={todayCardRef} siteInfo={siteInfo} /> */}
     </div>
   )
 }
