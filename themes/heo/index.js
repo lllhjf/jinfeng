@@ -61,10 +61,10 @@ const LayoutBase = props => {
       <Header {...props} />
 
       {/* 通知横幅 */}
-      {router.route === '/' ? (
+      {/*{router.route === '/' ? (
         <>
           <NoticeBar />
-          <Hero {...props} />
+          <Hero {...props}*/} />
         </>
       ) : null}
       {fullWidth ? null : <PostHeader {...props} isDarkMode={isDarkMode} />}
