@@ -66,7 +66,7 @@ export default function PostHeader({ post, siteInfo, isDarkMode }) {
                   className='mr-4'
                   passHref
                   legacyBehavior>
-                  <div className='cursor-pointer font-sm font-bold px-3 py-1 rounded-lg  hover:bg-white text-white bg-[#9b89b3]-500 dark:bg-[#9b89b3]-500 hover:text-blue-500 duration-200 '>
+                  <div className='cursor-pointer font-sm font-bold px-3 py-1 rounded-lg  hover:bg-white text-white bg-[#9b89b3] dark:bg-[#9b89b3] hover:text-blue-500 duration-200 '>
                     {post.category}
                   </div>
                 </Link>
