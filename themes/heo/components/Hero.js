@@ -231,7 +231,7 @@ function TopGroup(props) {
       {/* 置顶推荐文章 */}
       <div
         id='top-group'
-        className='w-full flex space-x-3 xl:space-x-0 xl:grid xl:grid-cols-3 xl:gap-3 xl:h-[342px]'>
+        className='w-full flex space-x-3 xl:space-x-0 xl:grid xl:grid-cols-3 xl:gap-3 xl:h-[442px]'>
         {topPosts?.map((p, index) => {
           return (
             <Link href={`${siteConfig('SUB_PATH', '')}/${p?.slug}`} key={index}>
