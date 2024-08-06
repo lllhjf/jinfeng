@@ -65,7 +65,7 @@ const BlogPostCard = ({ index, post, showSummary, siteInfo }) => {
               href={post?.href}
               passHref
               className={
-                ' group-hover:text-[#845ec2]-700 dark:hover:text-[#845ec2] dark:group-hover:text-[#845ec2] text-black dark:text-gray-100  line-clamp-2 replace cursor-pointer text-xl font-extrabold leading-tight'
+                ' group-hover:text-[#845ec2] dark:hover:text-[#845ec2] dark:group-hover:text-[#845ec2] text-black dark:text-gray-100  line-clamp-2 replace cursor-pointer text-xl font-extrabold leading-tight'
               }>
               {siteConfig('POST_TITLE_ICON') && (
                 <NotionIcon icon={post.pageIcon} />
