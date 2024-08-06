@@ -215,10 +215,10 @@ function GroupMenu() {
 function TopGroup(props) {
   const { latestPosts, allNavPages, siteInfo } = props
   const { locale } = useGlobal()
-  const todayCardRef = useRef()
-  // function handleMouseLeave() {
-  //   todayCardRef.current.coverUp()
-  // }
+  // const todayCardRef = useRef()
+  function handleMouseLeave() {
+    todayCardRef.current.coverUp()
+  }
 
   // 获取置顶推荐文章
   const topPosts = getTopPosts({ latestPosts, allNavPages })
