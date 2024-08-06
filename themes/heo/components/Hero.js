@@ -235,7 +235,7 @@ function TopGroup(props) {
 
       </div>
       {/* 一个大的跳转文章卡片 */}
-      {/* <TodayCard cRef={todayCardRef} siteInfo={siteInfo} /> */}
+      <TodayCard cRef={todayCardRef} siteInfo={siteInfo} />
     </div>
   )
 }
@@ -352,20 +352,7 @@ function TodayCard({ cRef, siteInfo }) {
               {siteConfig('HEO_HERO_TITLE_5', null, CONFIG)}
             </div>
           </div>
-          {/* 查看更多的按钮 */}
-          <div
-            onClick={handleClickShowMore}
-            className={`'${isCoverUp ? '' : 'hidden pointer-events-none'} z-10 group flex items-center px-3 h-10 justify-center  rounded-3xl
-            glassmorphism transition-colors duration-100 `}>
-            <PlusSmall
-              className={
-                'group-hover:rotate-180 duration-500 transition-all w-6 h-6 mr-2 bg-white rounded-full stroke-black'
-              }
-            />
-            <div id='more' className='select-none'>
-              {locale.COMMON.RECOMMEND_POSTS}
-            </div>
-          </div>
+
         </div>
 
         {/* 封面图 */}
