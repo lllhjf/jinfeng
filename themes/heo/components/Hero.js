@@ -235,7 +235,7 @@ function TopGroup(props) {
 
       </div>
       {/* 一个大的跳转文章卡片 */}
-      <TodayCard cRef={todayCardRef} siteInfo={siteInfo} />
+      {/* <TodayCard cRef={todayCardRef} siteInfo={siteInfo} /> */}
     </div>
   )
 }
