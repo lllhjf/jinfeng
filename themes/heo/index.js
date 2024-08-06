@@ -60,7 +60,14 @@ const LayoutBase = props => {
       {/* 顶部导航 */}
       <Header {...props} />
 
-
+      {/* 通知横幅 */}
+      {router.route === '/' ? (
+        <>
+          
+          <Hero {...props} />
+        </>
+      ) : null}
+      {fullWidth ? null : <PostHeader {...props} isDarkMode={isDarkMode} />}
     </header>
   )
 
