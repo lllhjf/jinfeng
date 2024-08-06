@@ -33,7 +33,7 @@ export default function CategoryBar(props) {
     <div
       id='category-bar'
       className={`flex flex-nowrap justify-between items-center h-12 mb-4 space-x-2 w-full lg:bg-white dark:lg:bg-[#1e1e1e]  
-  ${border ? 'lg:border lg:hover:border dark:lg:bg-[#845ec2]-800 hover:bg-[#845ec2]-600 dark:hover:bg-[#845ec2]-600 ' : ''}  py-2 lg:px-2 rounded-xl transition-colors duration-200`}>
+  ${border ? 'lg:border lg:hover:border dark:lg:text-[#845ec2]-800 hover:text-[#845ec2]-600 dark:hover:text-[#845ec2]-600 ' : ''}  py-2 lg:px-2 rounded-xl transition-colors duration-200`}>
       <div
         id='category-bar-items'
         ref={categoryBarItemsRef}
@@ -47,7 +47,7 @@ export default function CategoryBar(props) {
       <div id='category-bar-next' className='flex items-center justify-center'>
         <div
           id='right'
-          className='cursor-pointer mx-2 dark:text-gray-300 dark:hover:text-indigo-600 hover:text-indigo-600'
+          className='cursor-pointer mx-2 dark:text-gray-300 dark:hover:text-[#845ec2]-600 hover:text-[#845ec2]-600'
           onClick={handleToggleScroll}>
           {scrollRight ? (
             <ChevronDoubleLeft className={'w-5 h-5'} />
