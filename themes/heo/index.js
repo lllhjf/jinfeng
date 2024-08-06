@@ -55,21 +55,7 @@ const LayoutBase = props => {
   const { fullWidth, isDarkMode } = useGlobal()
   const router = useRouter()
 
-  const headerSlot = (
-    <header>
-      {/* 顶部导航 */}
-      <Header {...props} />
 
-      {/* 通知横幅 */}
-      {router.route === '/' ? (
-        <>
-          <NoticeBar />
-          //<Hero {...props} />
-        </>
-      ) : null}
-      {fullWidth ? null : <PostHeader {...props} isDarkMode={isDarkMode} />}
-    </header>
-  )
 
   // 右侧栏 用户信息+标签列表
   const slotRight =
