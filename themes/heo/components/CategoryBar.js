@@ -33,7 +33,7 @@ export default function CategoryBar(props) {
     <div
       id='category-bar'
       className={`flex flex-nowrap justify-between items-center h-12 mb-4 space-x-2 w-full lg:bg-white dark:lg:bg-[#1e1e1e]  
-  ${border ? 'lg:border lg:hover:border dark:lg:text-[#845ec2]-800 hover:text-[#845ec2]-600 dark:hover:text-[#845ec2]-600 ' : ''}  py-2 lg:px-2 rounded-xl transition-colors duration-200`}>
+  ${border ? 'lg:border lg:hover:border dark:lg:border-[#845ec2]-800 hover:border-[#845ec2]-600 dark:hover:border-[#845ec2]-600 ' : ''}  py-2 lg:px-2 rounded-xl transition-colors duration-200`}>
       <div
         id='category-bar-items'
         ref={categoryBarItemsRef}
@@ -57,7 +57,7 @@ export default function CategoryBar(props) {
         </div>
         <Link
           href='/category'
-          className='whitespace-nowrap font-bold text-gray-900 dark:text-white transition-colors duration-200 hover:text-indigo-600 dark:hover:text-indigo-600'>
+          className='whitespace-nowrap font-bold text-gray-900 dark:text-white transition-colors duration-200 hover:text-[#845ec2]-600 dark:hover:text-[#845ec2]-600'>
           {locale.MENU.CATEGORY}
         </Link>
       </div>
