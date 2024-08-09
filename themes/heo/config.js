@@ -15,11 +15,11 @@ const CONFIG = {
   HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: 'Welcome to my homepage!',
-  HEO_HERO_TITLE_2: 'Welcome to my homepage!',
-  HEO_HERO_TITLE_3: 'Welcome to my homepage!',
-  HEO_HERO_TITLE_4: 'Welcome to my homepage!',
-  HEO_HERO_TITLE_5: 'Welcome to my homepage!',
+  HEO_HERO_TITLE_1: '',
+  HEO_HERO_TITLE_2: '',
+  HEO_HERO_TITLE_3: '',
+  HEO_HERO_TITLE_4: '',
+  HEO_HERO_TITLE_5: '',
   HEO_HERO_TITLE_LINK: 'https://minei.eu.org',
 
   // 英雄区显示三个置顶分类
@@ -34,7 +34,7 @@ const CONFIG = {
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
-    'Hello！I'm'
+    'Hello！I am'
   ],
 
   // 个人资料底部按钮
